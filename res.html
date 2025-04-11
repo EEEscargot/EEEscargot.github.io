@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>欢迎来到姐姐的餐厅owo</title>
+    <link rel="stylesheet" href="character_jr.css">
+<style>/*文字替换*/
+        @font-face{
+          font-family: "fontnamegular";
+          src: url(chineseblack.ttf);
+        }
+        body {
+          font-family:"fontnamegular";
+  }
+  body/*背景*/{
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+  }
+  
+  body::before /*高斯模糊*/{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("back2.jpg");
+    background-size: cover;
+    z-index: -1;
+  }
+  .blur-box {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    width: 600px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+
+}
+  </style>
+</head>
+  <style>
+    fly{
+      font-size: 20px;
+      color: pink;
+    }
+
+  </style>
+<body>
+ <div class="fade-in">
+<div>
+  <h1 style="top:0;text-align: center;font-size:30px">#MEMU#</h1>
+  </div>
+<div class="blur-box">
+        <fly><p style="text-align: left;font-size:30px"> 姐姐的皮鞋🍰</p></fly>
+        <fly><p style="text-align: left;font-size:20px"> $姐姐的黑色小皮鞋在填满蛋糕和慕斯后更加可爱，难道你不想尝一口嘛🥰?
+        <fly><p style="text-align: left;font-size:15px">填充物:慕斯30￥&nbsp;&nbsp;&nbsp;蛋糕25￥</p> 
+        <fly><p style="text-align: left;font-size:15px">口味:草莓味4￥&nbsp;&nbsp;&nbsp;抹茶味5￥&nbsp;&nbsp;&nbsp;蓝莓味4￥</p>
+        <fly><p style="text-align: left;font-size:15px">分量:大份15￥&nbsp;&nbsp;&nbsp;小份10￥</p>
+        <fly><p style="text-align: left;font-size: 25px;">注意:总价钱为所选总和哦</p><fly>   
+</div>
+</div>
+<script>
+  window.onload = function() {
+    const element = document.querySelector('.fade-in');
+    element.classList.add('active');
+  };
+  </script>
