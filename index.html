@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Welcome！</title>
+    <link rel="stylesheet" href="xz.css">
+    <link rel="stylesheet" href="character_jr.css">
+<style>/*导航*/
+      /* 新增整合式导航栏 */
+      .nav-column {
+          position: fixed;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 150px;/*导航宽度*/
+          background: rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(15px);
+          -webkit-backdrop-filter: blur(15px);
+          border-radius: 0 15px 15px 0;
+          transition: all 0.3s ease;
+          z-index: 1000;
+          cursor: pointer;
+          overflow: hidden;
+      }
+      .nav-trigger-bar {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background: pink;
+          transition: all 0.3s ease;
+      }
+      .nav-column:hover,
+      .nav-column.active {
+          width: 160px;
+      }
+      /* 导航内容 */
+      .nav-content {
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          left: 40px;
+          top: 20px;
+          width: 120px;
+          max-width: calc(100% - 0px); 
+          transition: all 0.3s ease;
+      }
+
+      .nav-column.active .nav-content,
+      .nav-column:hover .nav-content {
+          opacity: 1;
+          visibility: visible;
+      }
+
+      .nav-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          max-width: calc(100% - 0px);
+          width: 100%; 
+      }
+
+      .nav-item {
+          margin: 15px 0;
+      }
+
+      /* 原有内容适配 */
+      .title {
+          margin-left: 60px; /* 给导航栏留出空间 */
+          transition: margin 0.3s ease;
+      }
+      /* 移动端优化 */
+      @media (max-width: 768px) {
+          .nav-column {
+              top: auto;
+              bottom: 20px;
+              transform: none;
+          }
+          .nav-column.active {
+              width: 160px;
+              height: auto;
+              padding: 20px 0;
+          }
+          .nav-content {
+              left: 35px;
+              top: 15px;
+          }
+      }
+  </style>
+
+<style>/*文字替换&文字背景*/
+      @font-face{
+        font-family: "fontnamegular";
+        src: url(chineseblack.ttf);
+      }
+      body {
+        font-family:"fontnamegular";
+}
+body/*背景*/{
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+}
+
+body::before /*高斯模糊*/{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("back1.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+.sister{
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+    left: 53%;
+    top: 550px;
+    transform: translate(-50%, -50%);
+
+}
+.gy{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    position:fixed;
+    top: 30px;
+    left:5px
+
+}
+
+.gx{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    position:fixed;
+    top: 130px;
+    left:5px
+
+}
+.blur-box-sister {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    width: 200px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    transform: translate(-50%, -50%);
+}
+
+.blur-box p {
+    color: #333;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+.title {
+
+  top: 100px;
+
+} 
+</style>
+
+<style>/*pink*/
+  fly{
+    font-size: 20px;
+    color: pink;
+  }
+</style>
+</head>
+
+<div= class="fade-in">
+<body>
+<div class="nav-column">
+    <div class="nav-trigger">
+        
+    </div>
+    <div class="nav-content">
+        <ul class="nav-list">
+            <div class="nav-item">
+                <a href="gy.html" class="nav-link">关于</a>
+            </div>
+            <div class="nav-item">
+                <a href="update.html" class="nav-link">更新日志</a>
+            </div>
+        </ul>
+    </div>
+</div>
+
+
+  <div class="title">
+  <h1 style="color:pink;font-size:50px;text-align:center;">欢迎来到蜗牛🐌的小屋</h1>
+  </div>
+  
+
+  <div class="sister">
+  <h3><fly>姐姐餐厅</fly></h3>
+  </div>
+  
+
+  <div class="blur-box-sister">
+  <a href="res.html"><fly style="text-align: center;">点我进入餐厅uwu></fly></a>
+  </div>
+
+</body>
+</div>
+<script>
+  window.onload = function() {
+    const element = document.querySelector('.fade-in');
+    element.classList.add('active');
+  };
+  </script>
+   <script>/*导航*/
+    // 导航栏交互逻辑
+    const navColumn = document.querySelector('.nav-column');
+    
+    // 点击切换
+    navColumn.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+
+    // 窗口尺寸适配
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navColumn.classList.remove('active');
+        }
+    });
+</script>
