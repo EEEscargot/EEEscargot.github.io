@@ -1,8 +1,0 @@
-.fade-in {
-    opacity: 0; /* 初始状态为完全透明 */
-    transition: opacity 1s ease-in-out; /* 定义过渡效果 */
-  }
-  
-.fade-in.active {
-    opacity: 1; /* 目标状态为完全不透明 */
-  }
