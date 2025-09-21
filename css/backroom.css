@@ -1,0 +1,6 @@
+.backroom{
+  position: fixed;
+  left: 20%;
+  top:65%;
+  transform: translateY(-5px); 
+}

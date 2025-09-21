@@ -1,0 +1,95 @@
+body/*背景*/{
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+}
+
+body::before /*高斯模糊*/{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/background/back1.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+.sister{
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+    left: 53%;
+    top: 550px;
+    transform: translate(-50%, -50%);
+
+}
+.gy{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    position:fixed;
+    top: 30px;
+    left:5px
+
+}
+
+.gx{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    position:fixed;
+    top: 130px;
+    left:5px
+
+}
+.blur-box-sister {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    width: 20px;
+    padding: 20px;
+    position: relative;
+    left: 10px;
+    top: 90px;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+
+  position:relative;
+  left: 37%;
+  top:20px;
+  transform: translate(-50%,-50%);
+}
+.blur-box-sis{
+  position: fixed;
+  left: 20%;
+  top:65%;
+  transform: translateY(-5px); 
+}
+.blur-box-sis:hover {
+  transform: translateY(-5px);
+}
