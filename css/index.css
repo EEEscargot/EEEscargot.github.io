@@ -93,3 +93,13 @@ body::before /*高斯模糊*/{
 .blur-box-sis:hover {
   transform: translateY(-5px);
 }
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+
+}
+
