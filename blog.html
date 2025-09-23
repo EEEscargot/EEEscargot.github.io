@@ -7,21 +7,27 @@
     <title>个人博客</title>
     <link rel="stylesheet" href="/css/blog.css">
     <script src="https://kit.fontawesome.com/fd2ef9f024.js" crossorigin="anonymous"></script>
-</head> 
 <style>/*文字替换*/
-      @font-face{
+@font-face{
         font-family: "fontnamegular";
         src: url(chineseblack.ttf);
-      }
+}
       body {
         font-family:"fontnamegular";
-      }
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
 </style>
-
-
-<body><!-- 这大概就是屎山吧-->
-
-    <div class="box_me">
+</head> 
+<div class="fade-in">
+    <body><!-- 这大概就是屎山吧-->
+        <div class="box_me">
             <div style="border:20px;text-align: center;">
                 <img src="/background/may1.jpg" alt="nothing"width="130.5px"height="130.5px">  
                     </div>
@@ -51,27 +57,33 @@
             <div class="div8">
                 <t2 style="color: white;;"><i>白鱼粉丝<i></t2><br>
                     </div>                   
-    </div>
-</div>
+            </div>
+        </div>
 
-    <div class="div_name">
+        <div class="div_name">
         <name style="color: pink;"><b><i>HI,I am Ctrl</i></b></name>
-    </div>
+        </div>
 
 
-    <div>
+        <div>
         <p style="color:pink;font-size: 50px;text-align: center;">个人博客页</p>
-    </div>
+        </div>
 
-    <div class="div_nr">
+        <div class="div_nr">
         <p style="color: black;font-size: 20px;text-align:center">你好呀,这里是ctrl的个人博客,当然你可能更熟悉我蜗牛的那名字.</p>
-    </div>
+        </div>
     
         <ul>
             <li><a href="https://github.com/EEEscargot/EEEscargot.github.io"><i class="fa-brands fa-github fa-2x"></i></a></li>
             <li><a href="https://space.bilibili.com/3493132364679691?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili fa-2x"></i></a></li>
             <li><a href="https://steamcommunity.com/profiles/76561199541239113/"><i class="fa-brands fa-steam fa-2x"></i></a></li>
         </ul>
+    </body>
+</div>
+<script>
+  window.onload = function() {
+    const element = document.querySelector('.fade-in');
+    element.classList.add('active');
+  };
+  </script>
 
-
-</body>
