@@ -152,20 +152,3 @@
     element.classList.add('active');
   };
   </script>
-
-   <script>/*导航*/
-    // 导航栏交互逻辑
-    const navColumn = document.querySelector('.nav-column');
-    
-    // 点击切换
-    navColumn.addEventListener('click', function() {
-        this.classList.toggle('active');
-    });
-
-    // 窗口尺寸适配
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-            navColumn.classList.remove('active');
-        }
-    });
-</script>
