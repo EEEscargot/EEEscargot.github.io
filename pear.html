@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>何意味</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+       body {
+            min-height: 100vh;
+            background: blanchedalmond;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+        .emoji {
+            position: absolute;
+            font-size: 2.5rem;
+            user-select: none;
+            pointer-events: none;
+            animation: pop 0.5s ease-out;
+        }
+        
+        @keyframes pop {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            70% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji-container" id="emojiContainer">
+            <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255, 255, 255, 0.7);">
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const emojiContainer = document.getElementById('emojiContainer');
+        const counter = document.getElementById('counter');
+        const emojis = ["🍐"];
+        let emojiCount = 0;
+    
+        function addEmoji(x, y) {
+            const emoji = document.createElement('div');
+            emoji.className = 'emoji';
+            emoji.textContent = emojis[0];
+            
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];/*随机（这里没用到*/
+            emoji.textContent = randomEmoji;
+
+            emoji.style.left = `${x}px`;
+            emoji.style.top = `${y}px`;
+        
+            emojiContainer.appendChild(emoji);
+            
+            emojiCount++;
+            counter.textContent = emojiCount;
+            
+            const initialText = emojiContainer.querySelector('p');
+            if (initialText) {
+                initialText.remove();
+            }
+        }
+        
+      document.body.addEventListener('click', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            
+            addEmoji(x, y);
+        });
+        
+    </script>
+</body>
+</html>

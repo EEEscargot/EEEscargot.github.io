@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/css/update.css">
+    <title>更新日志</title>
+<style>/*文字替换*/
+        @font-face{
+          font-family: "fontnamegular";
+          src: url(chineseblack.ttf);
+        }
+        body {
+          font-family:"fontnamegular";
+  }
+  body/*背景*/{
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+  }
+  
+  body::before /*高斯模糊*/{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/background/update.jpg");
+    background-size: cover;
+    z-index: -1;
+  }
+.blur-box{
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 200px;
+    padding: 20px;
+    position:absolute;
+    left: 15%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+.blur-box p {
+      color: #333;
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.6;
+  }
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+
+}
+.choose_see {
+    filter: blur(5px);
+    font-size: 15px;
+
+}
+.choose_see:active{
+    filter: none;
+}
+
+</style>
+</style>
+</head>
+
+  <div class="fade-in">
+
+  <div class="blur-box1">
+    <div>
+    <p style="font-size: 20px;">(因为之前的我忘记了,也懒得回忆直接从今天开始)<br>
+    2025.4.11<br>
+    删除部分网页的背景毛玻璃效果<br>
+    增加部分网页文字背景毛玻璃效果<br>
+    增加*关于页*更新日志页,修改部分网页名字<br>
+    重新利用css类修改对象的位置(其实我本来也不会)<br>
+    更新渐变入场效果
+    </p>  
+    </div>
+  </div>
+
+  <div class="blur-box2">
+    <div>
+    <p style="font-size: 20px;"><br>
+    2025.4.12<br>
+    更新导航栏(累死我了qwq)<br>
+    更新新菜品<br>
+    重写部分布局代码<br>
+    修复已知问题<br><br>
+    现在情况是我不知道以后更新多了下面下拉网页怎么搞,第二是点击反馈我打算做还没做,再更新几次就不玩前端了
+    </div>
+  </div>
+
+  <div class="blur-box3">
+    <div>
+    <p style="font-size: 20px;"><br>
+    2025.6.21<br>
+    彻底重写"姐姐餐厅"<br>
+    删除"梦"页面<br>
+    修改"更新"页面代码<br>
+    添加网站小图标<br>
+    更换主页面背景<br>
+    </div>
+  </div>
+
+  <div class="blur-box4">
+    <div>
+    <p style="font-size: 20px;"><br>
+    2025.9.20<br>
+    姐姐餐厅仍然没有进展，第一是我懒，第二是我不知道怎么排版<br>
+    新增加"个人博客页"<br>
+    随便整理了仓库<br>
+    <div class="choose_see">练习作用，没有人这么闲打开这个网页然后还仔细看这些内容hhh傻逼吧</div>
+    ps：如果说今年我还没有什么关于"姐姐餐厅"的想法这个栏目可能关闭
+    </div>
+  </div>
+
+  <div class="blur-box5">
+    <div>
+    <p style="font-size: 20px;"><br>
+    2025.11.29<br>
+    <i>我操,居然过了这么久了!!!</i><br>
+    新增加白鱼和lh很诡异页面<br>
+    删掉了一些无意义的css<br>
+    更新blog页面内容<br>
+     <div class="choose_see">不敢相信原来yogurt还活着，她点赞了我的视频。我以为她死了。</div>
+     学习一些js吧。。。<br>
+     再改一下你的那个blog的容器问题。<br>
+    </div>
+  </div>
+
+</div >
+
+<script>
+  window.onload = function() {
+    const element = document.querySelector('.fade-in');
+    element.classList.add('active');
+  };
+  </script>
