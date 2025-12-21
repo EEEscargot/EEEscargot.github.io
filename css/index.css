@@ -11,7 +11,7 @@ body::before /*高斯模糊*/{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/background/back1.jpg");
+  background-image: url("/background/background.gif");
   background-size: cover;
   filter: blur(5px);
   z-index: -1;
@@ -102,4 +102,5 @@ body::before /*高斯模糊*/{
   opacity: 1;
 
 }
+
 
