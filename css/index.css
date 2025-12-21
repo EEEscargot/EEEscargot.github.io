@@ -54,7 +54,8 @@ body::before{
   position: fixed;
   left: 20%;
   top:65%;
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
+  user-select:none;
 }
 .blur-box-sis:hover {
   transform: translateY(-5px);
@@ -68,3 +69,4 @@ body::before{
   opacity: 1;
 
 }
+
