@@ -7,6 +7,7 @@
     <title>Welcome！</title>
     <link rel="stylesheet" href="/css/xz.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/circle.css">
     <link rel="icon" href="favicon.ico"type="x-icon">
 <style>/*导航*/
       .nav-column {
@@ -24,6 +25,7 @@
           z-index: 1000;
           cursor: pointer;
           overflow: hidden;
+          user-select: none;
       }
       .nav-trigger-bar {
           position: absolute;
@@ -70,6 +72,7 @@
       .title {
           margin-left: 60px;
           transition: margin 0.3s ease;
+          user-select: none;
       }
   </style>
 
@@ -91,9 +94,10 @@
 </style>
 </head>
 
-<div class="fade-in">
+
 <body>
-<div class="nav-column">
+<div class="fade-in">
+    <div class="nav-column">
     <div class="nav-trigger">
         
     </div>
@@ -110,7 +114,7 @@
             </div>
         </ul>
     </div>
-</div>
+    </div>
 
 
     <div class="title">
@@ -120,12 +124,6 @@
     <div class="blur-box-sis">
         <a href="res.html"><fly style="text-align: center;">姐姐餐厅</fly></a>
     </div>
+  <script src="/js/circle.js" defer></script>
 </body>
-
-
-<script>
-  window.onload = function() {
-    const element = document.querySelector('.fade-in');
-    element.classList.add('active');
-  };
-</script>
+</html>>
