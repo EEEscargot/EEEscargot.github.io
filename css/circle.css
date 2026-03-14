@@ -4,9 +4,9 @@
         border: 2px solid pink;
         border-radius: 50%;
         z-index: 10000;
-        animation: animate 1s linear infinite;
+        animation: pulse 1s linear infinite;
       }
-@keyframes animate
+@keyframes pulse
 {
     0%
     {

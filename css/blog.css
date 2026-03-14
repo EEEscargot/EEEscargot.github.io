@@ -9,18 +9,20 @@ body::before{
   background-size: cover;
   z-index: -1;
 }
-.box_me{
+.box_me{ 
+    display: inline-block;
     position:absolute;
-    width: 125px;
+    width: 200px;
     height:400px;
     top:30%;
-    left:5%;
+    left:10%;
     transform: translate(-50%, -50%);
+    z-index: 100;
 }
 .div_main{
     background: rgba(129, 112, 112, 0.3);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     
     padding: 2rem;
     border-radius: 10px;
@@ -36,7 +38,7 @@ body::before{
 }
 .box_tap{
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); 
     
     padding: 2rem;
     border-radius: 10px;
@@ -44,13 +46,15 @@ body::before{
 
     width: 300px;
     height: 200px;
-    padding: 20px;
-    position: absolute;
-    margin: 5px;
+    padding: 5px;
+    position:relative;
+    margin: 10px;
+
+    text-decoration: none;
 }
 .div1{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 28%;
     left: 20%;
@@ -58,7 +62,7 @@ body::before{
 }
 .div2{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 36%;
     left: 45%;
@@ -66,7 +70,7 @@ body::before{
 }
 .div3{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 75%;
     left: 37%;
@@ -74,15 +78,16 @@ body::before{
 }
 .div4{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 62%;
     left: 84%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
 }
 .div5{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 49%;
     left: 65%;
@@ -90,7 +95,7 @@ body::before{
 }
 .div6{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 55%;
     left: 26%;
@@ -98,7 +103,7 @@ body::before{
 }
 .div7{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 25%;
     left: 73%;
@@ -106,7 +111,7 @@ body::before{
 }
 .div8{
     width:100px;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     top: 85%;
     left: 75%;
@@ -116,7 +121,7 @@ body::before{
 .div_lx{
     width: 900px;
     height: 30px;
-    padding: 20px;
+    padding: 5px;
     position:fixed;
     top:15%;
     left:10%
@@ -124,25 +129,30 @@ body::before{
 .div_name{
     width: 900px;
     height: 30px;
-    padding: 20px;
+    padding: 5px;
     position:absolute;
     top:15%;
     left:10%
 }
 .div_nr{
+    display: inline-block;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); 
     
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
-    width: 700px;
-    height: 40px;
     padding: 20px;
     position: relative;
-    left: 29%;
+    left: 25%;
     margin: 20px;
+}
+.picture{
+    border:25px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
 }
 ul{
     position: relative;
