@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>๑♡˚欢迎光临蟲巢˚♡๑</title>
+    <link rel="stylesheet" href="/css/circle.css">
+    <link rel="icon" href="rest.ico"type="x-icon">
+</head>
+<style>
+    /* 标头 */
+.nav{
+        height: 50px;
+        background: rgb(255, 212, 218);
+    }
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.cnm{
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+.navlist{
+    display: flex;
+    justify-content: space-evenly;
+    user-select: none;
+}
+.navlist a{
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    user-select: none;
+}
+/* 浮动 */
+.navlist a{
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+.li{
+    display: inline;
+}
+.navlist a:hover {
+    transform: translateY(-5px);
+    opacity: 0.7;
+    }
+.donghua{
+        animation:cnm 3s ease;
+        user-select: none;
+    }
+@keyframes cnm{
+
+    from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* 内容 */
+.menu{
+    width: 600px;
+    height: 200px;
+    margin-top: 20px;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+
+}
+</style>
+<body>
+    <div class="nav">
+        <ul class="navlist">
+            <li class="cnm"><a href="res_first.html">首页</a></li>
+            <li class="cnm"><a href="res_menu.html">菜单</a></li>
+            <li class="cnm"><a href="res_character.html">店员</a></li>
+            <li class="cnm"><a href="res_gy.html">关于蟲巢</a></li>
+        </ul>
+    </div>
+<div class="donghua">
+    <div>
+        <b style="color: pink;font-size:50px;margin-left: 20px;margin-top:20px;">店员</b>
+    </div>
+
+    <div class="menu">
+       
+    </div>
+    
+
+    
+
+
+</body>
+</html>
+<script src="/js/circle.js" defer></script>
